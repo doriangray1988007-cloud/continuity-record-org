@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBLIC COHERENCE ARCHIVE // ABOUT</title>
+    <link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+
+<div class="record-shell">
+
+    <header class="record-header">
+        <div>INSTITUTIONAL ID: COHERENCE-ARCHIVE-PRIME</div>
+        <div>SYSTEM STATUS: <span class="status-indicator">ACCESSIBLE</span></div>
+    </header>
+
+    <nav class="archive-nav">
+        <ul>
+            <li><a href="/index.html">MAIN</a></li>
+            <li><a href="/about.html" class="active">ABOUT</a></li>
+            <li><a href="/records/index.html">DOCUMENT LIBRARY</a></li>
+            <li><a href="/incidents/index.html">INCIDENT CLASSIFICATIONS</a></li>
+            <li><a href="/unresolved/index.html">UNRESOLVED</a></li>
+        </ul>
+    </nav>
+
+    <main class="record-body">
+        <h1>INSTITUTIONAL STATEMENT</h1>
+        
+        <p>
+            The Public Coherence Archive is an independent, non-classified clearinghouse established to maintain structural transparency regarding localized physical, environmental, and informational discrepancies. 
+        </p>
+        
+        <h2>MISSION MANDATE</h2>
+        <p>
+            When baseline parameters fluctuate within populated zones, public safety requires an objective record unhampered by institutional panic. Our function is documentation, cataloging, and structural preservation. We do not offer solutions; we ensure the data survives the shift.
+        </p>
+
+        <h2>SUBMISSION PROTOCOLS</h2>
+        <p>
+            Materials are ingested from field researchers, system administrators, and accidental witnesses. All incoming datasets undergo a standard three-stage verification process before being indexed in the public repository:
+        </p>
+
+        <ul class="directory-list">
+            <li>
+                <div>
+                    <strong>STAGE 01: Physical Corroboration</strong>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Cross-referencing geographic coordinates against known municipal blind spots.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>STAGE 02: Lexical Consistency</strong>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Parsing records for linguistic corruption patterns characteristic of deep spatial anomalies.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>STAGE 03: Public Safety Appraisal</strong>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Anonymizing personnel identities to protect sources from bureaucratic reprisal.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer class="record-footer">
+        <p>ALL MATERIAL PUBLISHED HEREIN IS SUBJECT TO ADMINISTRATIVE AUDIT. CONTINUITY STATUS: PENDING INTERPRETATION.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

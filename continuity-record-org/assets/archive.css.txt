@@ -1,0 +1,187 @@
+/* ==========================================================================
+   PUBLIC COHERENCE ARCHIVE - GLOBAL CORE STYLESHEET
+   ========================================================================== */
+
+/* Font Provisioning via Google Fonts CDN */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --bg-primary: #0a0a0c;
+    --bg-surface: #121216;
+    --border-color: #2a2a35;
+    --text-primary: #d1d1db;
+    --text-muted: #6e6e80;
+    --accent-glow: #00ff66;
+    --accent-alert: #ff3333;
+    
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-sans: 'IBM Plex Sans', sans-serif;
+}
+
+/* Reset & Global Base Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Institutional Outer Container */
+.record-shell {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Terminal Header Spec */
+.record-header {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 2px double var(--border-color);
+    margin-bottom: 2.5rem;
+    color: var(--text-muted);
+}
+
+.record-header .status-indicator {
+    color: var(--accent-glow);
+    font-weight: 600;
+}
+
+/* Document Repository Navigation */
+.archive-nav {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.archive-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.archive-nav a {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.archive-nav a:hover, 
+.archive-nav a.active {
+    background-color: var(--border-color);
+    border-color: var(--text-muted);
+}
+
+/* Typography Hierarchy */
+h1 {
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+/* Meta Data Blocks for In-World Documents */
+.meta-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.meta-table td {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.meta-table td.label {
+    width: 30%;
+    color: var(--text-muted);
+    background-color: rgba(255,255,255,0.02);
+    text-transform: uppercase;
+}
+
+/* Directory Index Lists */
+.directory-list {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.directory-list li {
+    padding: 0.75rem;
+    border: 1px dashed var(--border-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.directory-list a {
+    font-family: var(--font-mono);
+    color: var(--accent-glow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.directory-list a:hover {
+    text-decoration: underline;
+}
+
+.directory-list .doc-meta {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Institutional Footer Spec */
+.record-footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: center;
+    letter-spacing: 0.05em;
+}

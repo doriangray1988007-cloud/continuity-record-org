@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Local development fallback tracking
+local_backend: true
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "records"
+    label: "Document Library"
+    folder: "records"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout Template", name: "layout", type: "hidden", default: "record" }
+      - { label: "Document Reference ID", name: "title", type: "string" }
+      - { label: "Classification Status", name: "classification", type: "string" }
+      - { label: "Record Timestamp", name: "date", type: "datetime" }
+      - { label: "Primary Location/Node", name: "node", type: "string" }
+      - { label: "Log Content Narrative", name: "body", type: "markdown" }
