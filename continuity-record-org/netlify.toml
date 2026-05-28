@@ -1,0 +1,3 @@
+[build]
+  base = "continuity-record-org"
+  publish = "."
